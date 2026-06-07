@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- EDIT: Page title shown in the browser tab -->
+  <title>Your Name — Developer Portfolio</title>
+  <meta name="description" content="Personal portfolio of Your Name — Aspiring Software Developer." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Font Awesome icons (for social + skill icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION BAR (sticky)
+       EDIT: brand name in <span class="logo-text">
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-badge"><i class="fa-solid fa-code"></i></span>
+        <span class="logo-text">Vardhini</span> <!-- EDIT: your brand / short name -->
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn-primary nav-cta">Hire Me</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HOME / HERO SECTION
+       EDIT: name, tagline, intro paragraph, profile image
+  ============================================================ -->
+  <section id="home" class="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-text reveal">
+        <span class="pill">
+          <span class="dot"></span> Available for internships
+        </span>
+        <!-- EDIT: Your name -->
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Vardhini</span>
+        </h1>
+        <!-- EDIT: Tagline / role -->
+        <p class="hero-tagline">Turning Ideas into Beautiful and User-Friendly Digital Experiencesr</p>
+        <!-- EDIT: Short intro about yourself -->
+        <p class="hero-intro">
+          I build clean, performant web experiences and love turning ideas
+          into real products. Currently exploring full-stack development,
+          open-source, and AI-powered tools.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            View Projects <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <!-- EDIT: Resume path -->
+          <a href="resume/resume.pdf" download class="btn btn-glass">
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+        </div>
+
+        <!-- EDIT SOCIAL LINKS (hero) -->
+        <div class="hero-socials">
+          <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:your.email@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-image reveal">
+        <div class="img-glow"></div>
+        <!-- EDIT: Replace src with your own photo (e.g. "profile.jpg") -->
+        <img
+          id="profile-img"
+          src="https://res.cloudinary.com/dysnjajco/image/upload/v1780806976/profile.jpg_vzb8kc.png"
+          alt="My Photo"
+        />
+        <div class="float-card float-card-1">
+          <p class="muted">Currently learning</p>
+          <p class="bold">Next.js & AI</p>
+        </div>
+        <div class="float-card float-card-2">
+          <p class="muted">Coding for</p>
+          <p class="bold">2 years</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+       EDIT: bio, education info, career goals
+  ============================================================ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Get to know me</p>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-sub">A short story about who I am and what I love to build.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- EDIT: About / introduction paragraph -->
+        <div class="glass card reveal">
+          <h3><i class="fa-solid fa-user"></i> Introduction</h3>
+          <p>
+            I'm Vardhini, a second-year B.Sc. Computer Science student with a strong passion for technology, creativity, and problem-solving.
+            I enjoy exploring the world of UI/UX design and creating visually appealing, user-friendly digital experiences. Alongside my 
+            academic journey, I continuously work on improving my skills in web development, programming, and modern design principles.
+          </p>
+        </div>
+
+        <!-- EDIT: Education -->
+        <div class="glass card reveal">
+          <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+          <p><strong>B.Sc in Computer Science</strong></p>
+          <p>Birla Institute of Technology And Science, Pilani &middot; 2024 — 2027</p>
+          <p>CGPA: 8.18 / 10</p>
+        </div>
+
+        <!-- EDIT: Career goals -->
+        <div class="glass card reveal">
+          <h3><i class="fa-solid fa-bullseye"></i> Career Goals</h3>
+          <p>
+            To become a versatile software developer, contribute to impactful
+            products, and land a meaningful role at a forward-thinking company.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+       EDIT: skill names inside each category
+  ============================================================ -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">What I work with</p>
+        <h2 class="section-title">Skills & <span class="gradient-text">Expertise</span></h2>
+        <p class="section-sub">Tools, languages, and abilities I bring to the table.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- EDIT: Programming Languages -->
+        <div class="glass card skill-card reveal">
+          <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Programming Languages</h3>
+          <ul class="chips">
+            <li>JavaScript</li>
+            <li>Python</li>
+          </ul>
+        </div>
+
+        <!-- EDIT: Web Development -->
+        <div class="glass card skill-card reveal">
+          <div class="skill-icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>Web Development</h3>
+          <ul class="chips">
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express</li>
+          </ul>
+        </div>
+
+        <!-- EDIT: Tools & Technologies -->
+        <div class="glass card skill-card reveal">
+          <div class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <h3>Tools & Technologies</h3>
+          <ul class="chips">
+            <li>Git & GitHub</li>
+            <li>VS Code</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION (6 cards)
+       EDIT: Each <article class="project-card"> below is one project.
+              Change image, title, description, tech chips, and links.
+  ============================================================ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">My work</p>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-sub">A collection of things I've built while learning.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT 1 -->
+        <article class="glass project-card reveal">
+          <div class="project-image">
+            <!-- EDIT: project image -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLyDnEZOJ6ye3XArWiDWp2bKLZEieKbyyifQ&s" alt="Project 1" />
+          </div>
+          <div class="project-body">
+            <!-- EDIT: title -->
+            <h3>Typing test project</h3>
+            <!-- EDIT: description -->
+            <p>Designed and developed a responsive Typing Test web application using HTML, CSS, and JavaScript. The application
+              evaluates typing performance by calculating WPM, accuracy, and error count while providing a smooth and user-friendly
+              experience.</p>
+            <!-- EDIT: tech chips -->
+            <ul class="chips small">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <!-- EDIT: GitHub link -->
+              <a class="btn btn-glass small" href="https://github.com/vardhini88/typing-test-project" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+              <!-- EDIT: Live demo link -->
+              <a class="btn btn-primary small" href="https://vardhini88.github.io/typing-test-project/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="glass project-card reveal">
+          <div class="project-image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5P9D25F_UoWgzZlgrGVgpF3gKQRgMMOiD0g&s" alt="Project 2" />
+          </div>
+          <div class="project-body">
+            <h3>Health Care App</h3>
+            <p>Collaboratively built a Healthcare Application during a college Buildathon that helps users manage health information, schedule appointments, and access essential
+              healthcare services through a simple and responsive interface. The project focused on usability, accessibility, and efficient healthcare management.</p>
+            <ul class="chips small"><li>AI</li><li>Bass44</li></ul>
+            <div class="project-links">
+              <a class="btn btn-glass small" href="https://auryst-91105e9d.base44.app/" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+              <a class="btn btn-primary small" href="https://auryst-91105e9d.base44.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="glass project-card reveal">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop" alt="Project 3" />
+          </div>
+          <div class="project-body">
+            <h3>AI Chat Assistant</h3>
+            <p>Conversational AI assistant with streaming responses and personas.</p>
+            <ul class="chips small"><li>React</li><li>OpenAI</li><li>Node</li></ul>
+            <div class="project-links">
+              <a class="btn btn-glass small" href="#" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+              <a class="btn btn-primary small" href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+            </div>
+          </div>
+        </article>
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RESUME SECTION
+       EDIT: Resume PDF must be placed at: resume/resume.pdf
+  ============================================================ -->
+  <section id="resume" class="section">
+    <div class="container">
+      <div class="glass resume-card reveal">
+        <div>
+          <p class="eyebrow">My experience on paper</p>
+          <h2 class="section-title">Download My <span class="gradient-text">Resume</span></h2>
+          <p class="section-sub">Get a complete overview of my skills, projects, and education.</p>
+        </div>
+        <!-- EDIT: Resume download link -->
+        <a href="file:///C:/Users/nakka/Downloads/vardhini.pdf" download class="btn btn-primary big">
+          <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+       EDIT: email, phone, location, social links
+  ============================================================ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Let's talk</p>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-sub">Have an opportunity or just want to say hi? Drop a message.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="glass card reveal">
+          <h3>Contact Details</h3>
+          <!-- EDIT: contact info -->
+          <p><i class="fa-solid fa-envelope"></i> nakkavardhini887@example.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> India</p>
+
+          <h3 style="margin-top:1.5rem">Find me on</h3>
+          <!-- EDIT SOCIAL LINKS (contact) -->
+          <div class="socials">
+            <a href="https://github.com/vardhini88" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nakka-vardhini-9a768b3b5/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:your.email@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <form class="glass card reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me a bit about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       EDIT SOCIAL LINKS + copyright name
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> <strong>Vardhini</strong>. All rights reserved.</p>
+      <div class="socials">
+        <a href="https://github.com/vardhini88" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nakka-vardhini-9a768b3b5/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="mailto:your.email@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
